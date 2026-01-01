@@ -1,35 +1,34 @@
-"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet"
-"C1,C2,C13,C14,C15,C16,C17,C18,C19,C21,C22,C23","12","100nF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C3","1","470nF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C4","1","47pF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C5","1","47nF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C6","1","1nF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C7","1","39nF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C8,C9","2","3.3pF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C10,C11","2","15pF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C12,C20","2","1uF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"C24,C25","2","10uF","","","","Capacitor_SMD:C_0402_1005Metric","~"
-"FB1","1","BLM15AX102SN1D","","","","Inductor_SMD:L_0402_1005Metric","https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-BLM18PG121SN1D_C14709.pdf"
-"J1","1","USB_C_Receptacle_USB2.0_16P","","","","Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal","https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-"J2","1","SENSOR","","","","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
-"J3","1","GPS","","","","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
-"J4","1","OLED","","","","Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical","~"
-"J5","1","Conn_Coaxial","","","","Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical","~"
-"L1","1","15uH","","","","Inductor_SMD:L_0402_1005Metric","~"
-"L2","1","47nH","","","","Inductor_SMD:L_0402_1005Metric","~"
-"L3","1","9.1nH","","","","Inductor_SMD:L_0402_1005Metric","~"
-"R1","1","100","","","","Resistor_SMD:R_0402_1005Metric","~"
-"R2,R3","2","27.4","","","","Resistor_SMD:R_0402_1005Metric","~"
-"R4","1","10k","","","","Resistor_SMD:R_0402_1005Metric","~"
-"R5","1","1k","","","","Resistor_SMD:R_0402_1005Metric","~"
-"R6,R7","2","5.1k","","","","Resistor_SMD:R_0402_1005Metric","~"
-"R8","1","1K","","","","Resistor_SMD:R_0402_1005Metric","~"
-"SW1,SW2","2","SW_Push","","","","Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS","~"
-"U1","1","SX1262IMLTRT","","","","Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm","https://semtech.file.force.com/sfc/dist/version/download/?oid=00DE0000000JelG&ids=0682R00000IjPWSQA3&d=%2Fa%2F2R000000Un7F%2FyT.fKdAr9ZAo3cJLc4F2cBdUsMftpT2vsOICP7NmvMo"
-"U2","1","RP2040","","","","Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm","https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf"
-"U3","1","PE4259","","","","Package_TO_SOT_SMD:SOT-363_SC-70-6","https://lcsc.com/datasheet/lcsc_datasheet_2409301504_pSemi-PE4259-63_C470892.pdf"
-"U4","1","0900FM15D0039E","","","","RF_Converter:Balun_Johanson_0900FM15K0039","0900FM15D0039E"
-"U5","1","W25Q16JVSS","","","","Package_SO:SOIC-8_5.3x5.3mm_P1.27mm","https://www.winbond.com/hq/support/documentation/levelOne.jsp?__locale=en&DocNo=DA00-W25Q16JV.1"
-"U6","1","AP2112K-3.3","","","","Package_TO_SOT_SMD:SOT-23-5","https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-"Y1","1","32MHz","","","","Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm","~"
-"Y2","1","12MHz","","","","Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm","~"
+Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C13, C14, C15, C16, C17, C18, C19, C2, C21, C22, C23",0402,12,100nF,
+"C10, C11",0402,2,15pF,
+"C12, C20",0402,2,1uF,
+"C24, C25",0402,2,10uF,
+C3,0402,1,470nF,
+C4,0402,1,47pF,
+C5,0402,1,47nF,
+C6,0402,1,1nF,
+C7,0402,1,39nF,
+"C8, C9",0402,2,3.3pF,
+FB1,0402,1,BLM15AX102SN1D,C14709
+J1,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,1,USB_C_Receptacle_USB2.0_16P,
+J2,PinHeader_1x04_P2.54mm_Vertical,1,SENSOR,
+J3,PinHeader_1x04_P2.54mm_Vertical,1,GPS,
+J4,PinSocket_1x04_P2.54mm_Vertical,1,OLED,
+J5,U.FL_Hirose_U.FL-R-SMT-1_Vertical,1,Conn_Coaxial,
+L1,0402,1,15uH,
+L2,0402,1,47nH,
+L3,0402,1,9.1nH,
+R1,0402,1,100,
+"R2, R3",0402,2,27.4,
+R4,0402,1,10k,
+"R5, R8",0402,2,1k,
+"R6, R7",0402,2,5.1k,
+"SW1, SW2",SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS,2,SW_Push,
+U1,QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,1,SX1262IMLTRT,
+U2,QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm,1,RP2040,
+U3,SOT-363_SC-70-6,1,PE4259,
+U4,Balun_Johanson_0900FM15K0039,1,0900FM15D0039E,
+U5,SOIC-8_5.3x5.3mm_P1.27mm,1,W25Q16JVSS,
+U6,SOT-23-5,1,AP2112K-3.3,
+Y1,Crystal_SMD_3225-4Pin_3.2x2.5mm,1,32MHz,
+Y2,Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm,1,12MHz,
