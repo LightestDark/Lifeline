@@ -1,0 +1,94 @@
+#include <RadioLib.h>
+#include <Wire.h>
+#include <TinyGPSPlus.h>
+#include <Adafruit_SSD1306.h>
+
+// ================= Objects =================
+SX1262 lora = new Module(LORA_CS, LORA_DIO1, LORA_RST, LORA_BUSY);
+TinyGPSPlus gps;
+Adafruit_SSD1306 display(128, 64, &Wire);
+
+// ================= Setup =================
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(USER_BTN, INPUT_PULLUP);
+
+  Serial.begin(115200);
+  delay(1000);
+
+  // SPI
+  SPI.setSCK(LORA_SCK);
+  SPI.setTX(LORA_MOSI);
+  SPI.setRX(LORA_MISO);
+  SPI.begin();
+
+  // I2C
+  Wire.begin(I2C_SDA, I2C_SCL);
+
+  // OLED (status only)
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(0, 0);
+  display.println("Lifeline");
+  display.println("Init...");
+  display.display();
+
+  // GPS
+  Serial1.setTX(GPS_TX);
+  Serial1.setRX(GPS_RX);
+  Serial1.begin(9600);
+
+  // LoRa
+  int state = lora.begin(
+    868.0,   // MHz
+    125.0,   // bandwidth
+    7,       // spreading factor
+    5,       // coding rate
+    0x12,    // sync word
+    22,      // dBm
+    8
+  );
+
+  if (state != RADIOLIB_ERR_NONE) {
+    display.println("LoRa FAIL");
+    display.display();
+    while (1);
+  }
+
+  display.println("LoRa OK");
+  display.display();
+}
+
+// ================= Loop =================
+void loop() {
+  // Feed GPS parser
+  while (Serial1.available()) {
+    gps.encode(Serial1.read());
+  }
+
+  // Button-triggered send
+  if (!digitalRead(USER_BTN)) {
+    digitalWrite(LED_PIN, HIGH);
+
+    String payload = "NO_GPS";
+
+    if (gps.location.isValid()) {
+      payload =
+        String(gps.location.lat(), 6) + "," +
+        String(gps.location.lng(), 6);
+    }
+
+    lora.transmit(payload);
+
+    display.clearDisplay();
+    display.setCursor(0, 0);
+    display.println("TX");
+    display.println(payload);
+    display.display();
+
+    digitalWrite(LED_PIN, LOW);
+    delay(1500); // debounce + human time
+  }
+}
