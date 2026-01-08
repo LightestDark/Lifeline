@@ -1,13 +1,13 @@
 Index,LCSC#,MPN,Manufacturer,Package,Description,RoHS,Quantity,MOQ,Multiple,Unit Price($),Extended Price($),Product Link,Total Price ($)
-1,C92361,CL05A474KA5NNNC,Samsung Electro-Mechanics,402,25V 470nF X5R ±10% 0402 Ceramic Capacitors RoHS,yes,10,10,10,0.0118,0.12,https://www.lcsc.com/product-detail/C92361.html,0.12
-2,C1525,CL05B104KO5NNNC,Samsung Electro-Mechanics,402,16V 100nF X7R ±10% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.0012,0.12,https://www.lcsc.com/product-detail/C1525.html,0.24
-3,C1864241,GJM1555C1H390GB01D,muRata,402,50V 39pF C0G ±2% 0402 Ceramic Capacitors RoHS,yes,20,20,20,0.0355,0.71,https://www.lcsc.com/product-detail/C1864241.html,0.95
+1,C92361,CL05A474KA5NNNC,Samsung Electro-Mechanics,402,25V 470nF X5R ±10% 0402 Ceramic Capacitors RoHS,yes,10,10,10,0.0118,0.12,https://www.lcsc.com/product-detail/C92361.html,1.12
+2,C1525,CL05B104KO5NNNC,Samsung Electro-Mechanics,402,16V 100nF X7R ±10% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.0012,0.12,https://www.lcsc.com/product-detail/C1525.html,1.24
+3,C1864241,GJM1555C1H390GB01D,muRata,402,50V 39pF C0G ±2% 0402 Ceramic Capacitors RoHS,yes,20,20,20,0.0355,0.71,https://www.lcsc.com/product-detail/C1864241.html,1.95
 4,C76906,GJM1555C1H3R3BB01D,muRata,402,50V 3.3pF C0G 0402 Ceramic Capacitors RoHS,yes,50,50,50,0.0166,0.83,https://www.lcsc.com/product-detail/C76906.html,1.78
 5,C77018,GRM155R71H102KA01D,muRata,402,50V 1nF X7R ±10% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.002,0.2,https://www.lcsc.com/product-detail/C77018.html,1.98
 6,C76970,GRM1555C1H470JA01D,muRata,402,50V 47pF C0G ±5% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.0022,0.22,https://www.lcsc.com/product-detail/C76970.html,2.2
 7,C307339,CL05B473KB5VPNC,Samsung Electro-Mechanics,402,50V 47nF X7R ±10% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.0076,0.76,https://www.lcsc.com/product-detail/C307339.html,2.96
-8,C14445,CL05A105KP5NNNC,Samsung Electro-Mechanics,402,10V 1uF X5R ±10% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.0017,0.17,https://www.lcsc.com/product-detail/C14445.html,3.13
-9,C76950,GRM1555C1H150JA01D,muRata,402,50V 15pF C0G ±5% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.0025,0.25,https://www.lcsc.com/product-detail/C76950.html,3.38
+8,C14445,CL05A105KP5NNNC,Samsung Electro-Mechanics,402,10V 1uF X5R ±10% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.0017,0.17,https://www.lcsc.com/product-detail/C14445.html,4.13
+9,C76950,GRM1555C1H150JA01D,muRata,402,50V 15pF C0G ±5% 0402 Ceramic Capacitors RoHS,yes,100,100,100,0.0025,0.25,https://www.lcsc.com/product-detail/C76950.html,4.38
 10,C315248,CL05A106MP5NUNC,Samsung Electro-Mechanics,402,10V 10uF X5R ±20% 0402 Ceramic Capacitors RoHS,yes,20,20,20,0.0085,0.17,https://www.lcsc.com/product-detail/C315248.html,3.55
 11,C85815,BLM15AX102SN1D,muRata,402,490mΩ ±25% 1kΩ@100MHz 0402 Ferrite Beads and Chips RoHS,yes,100,100,100,0.0055,0.55,https://www.lcsc.com/product-detail/C85815.html,4.1
 12,C5224443,0900FM15K0039E,Johanson Dielectrics,"SMD-10P,1.2x2mm","SMD-10P,1.2x2mm Ceramic Filters RoHS",yes,2,1,1,1.8851,3.77,https://www.lcsc.com/product-detail/C5224443.html,7.87
@@ -30,7 +30,7 @@ Index,LCSC#,MPN,Manufacturer,Package,Description,RoHS,Quantity,MOQ,Multiple,Unit
 29,C5187559,ABM8G-32.000MHZ-B4Y-T,ABRACON,SMD3225-4P,SMD3225-4P Crystals RoHS,yes,2,1,1,0.7108,1.42,https://www.lcsc.com/product-detail/C5187559.html,26.42
 30,N/A,Shipping global direct,,,,,,,,,9.13,,35.55
 31,N/A,JLCPCB excl shipping,,,green+stencil,,,,,,14.08,,49.63
-32,,Shipping europacket bc cheaper than standard direct,,,1 eur cheaper approx,,,,,,20.36,,69.99
+32,,Shipping europacket bc cheaper than standard direct,,,1 eur cheaper approx,,,,,,24.36,,69.99
 33,,4pin Headers,,,,,,,,,,,4
 34,,Customs,,,,,,,,,8.3,,78.29
 
